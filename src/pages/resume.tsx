@@ -46,7 +46,7 @@ export default function Resume() {
 
         <PageSection>
           <iframe
-            src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=1jrTdWDsIPCNlwYcqLn7l22g8_3plFvcF&embedded=true"
+            src="/pdf/resume.png"
             allowFullScreen
             width="740"
             height="780"
