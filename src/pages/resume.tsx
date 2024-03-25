@@ -9,12 +9,12 @@ import { PageSection } from "../styles/resume";
 import { BsFileText } from "react-icons/bs";
 
 export default function Resume() {
-  const resumeData =
-    "https://www.canva.com/design/DAF_8XCu3XQ/CaRChRCSpfStcdCz53oIvQ/edit?utm_content=DAF_8XCu3XQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
-  const previewData = `${resumeData.substr(
-    0,
-    resumeData.lastIndexOf("/") + 1
-  )}view?embed`;
+  // const resumeData =
+  //   "https://www.canva.com/design/DAF_8XCu3XQ/CaRChRCSpfStcdCz53oIvQ/edit?utm_content=DAF_8XCu3XQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+  // const previewData = `${resumeData.substr(
+  //   0,
+  //   resumeData.lastIndexOf("/") + 1
+  // )}view?embed`;
 
   return (
     <>
@@ -46,7 +46,7 @@ export default function Resume() {
 
         <PageSection>
           <iframe
-            src={previewData}
+            src="https://docs.google.com/gview?url=https://drive.google.com/uc?id=1jrTdWDsIPCNlwYcqLn7l22g8_3plFvcF&embedded=true"
             allowFullScreen
             width="740"
             height="780"
