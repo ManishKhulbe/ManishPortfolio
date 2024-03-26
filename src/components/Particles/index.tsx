@@ -22,10 +22,6 @@ const ParticlesComponent = (props: any) => {
     });
   }, []);
 
-  const particlesLoaded = (container: any) => {
-    console.log(container);
-  };
-
   const options = useMemo(
     () => ({
       background: {
@@ -67,11 +63,8 @@ const ParticlesComponent = (props: any) => {
           width: 1,
         },
         move: {
-          direction: "none",
           enable: true,
-          outModes: {
-            default: "bounce",
-          },
+
           random: true,
           speed: 1,
           straight: false,
@@ -97,7 +90,7 @@ const ParticlesComponent = (props: any) => {
     []
   );
 
-  return <Particles id={props.id} init={particlesLoaded} options={options} />;
+  return <Particles id={props.id} options={options} />;
 };
 
 export default ParticlesComponent;
