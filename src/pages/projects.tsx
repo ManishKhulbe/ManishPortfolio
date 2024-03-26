@@ -113,10 +113,10 @@ export default function Projects() {
                           })}
                         </div>
                       </div>
-                      <Link href={`/project/${project.url}`}>
-                        <a>
+                      {project.isLive ? (
+                        <a href={project.url} target="_blank" rel="noreferrer">
                           <T.ButtonAlternatives>
-                            View project
+                            View Live
                             <ArrowRight
                               style={{
                                 marginBottom: "-0.1rem",
@@ -126,7 +126,22 @@ export default function Projects() {
                             />
                           </T.ButtonAlternatives>
                         </a>
-                      </Link>
+                      ) : (
+                        <Link href={`/project/${project.url}`}>
+                          <a>
+                            <T.ButtonAlternatives>
+                              View project
+                              <ArrowRight
+                                style={{
+                                  marginBottom: "-0.1rem",
+                                }}
+                                weight="bold"
+                                size={16}
+                              />
+                            </T.ButtonAlternatives>
+                          </a>
+                        </Link>
+                      )}
                     </div>
                   </S.ProjectsItem>
                 </>
