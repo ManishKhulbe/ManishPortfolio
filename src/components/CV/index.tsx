@@ -20,7 +20,7 @@ export function CV() {
               Here you can download my resume by clicking the download button.
             </p>
             <div className="profile">
-              <img src="/manish.jpeg" alt="Imagem of perfil" />
+              <img src="/manish.jpeg" alt="Image of manish" />
               <div className="name">
                 <h3>Manish Khulbe</h3>
                 <span>Full Stack Developer</span>

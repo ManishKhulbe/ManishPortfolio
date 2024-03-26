@@ -48,7 +48,7 @@ export default function About() {
             <S.AboutImage>
               <img
                 className="AboutImg"
-                src="/manish.jpeg"
+                src="/manish1.jpg"
                 alt="Manish Khulbe profile picture"
               />
 

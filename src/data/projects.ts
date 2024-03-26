@@ -85,7 +85,7 @@ const projects = [
   },
   {
     id: 2,
-    url: "https://fedoraindia.in/",
+    url: "https://fedoraindia.in",
     banner: "/projects/fedora/home.png",
     img: "/projects/fedora/home.png",
     title: "Fedora",
@@ -163,7 +163,7 @@ const projects = [
   },
   {
     id: 3,
-    url: "https://findyovi.com/",
+    url: "https://findyovi.com",
     banner: "/projects/yovi/home.png",
     img: "/projects/yovi/home.png",
     title: "yovi",
@@ -241,7 +241,7 @@ const projects = [
   },
   {
     id: 4,
-    url: "https://hrm.mobcoder.com/",
+    url: "https://hrm.mobcoder.com",
     banner: "/projects/hrm/home.png",
     img: "/projects/hrm/home.png",
     title: "HRM",

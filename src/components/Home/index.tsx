@@ -6,10 +6,12 @@ import Typewriter from "typewriter-effect";
 import { ButtonPrimary, Container } from "../../styles/styles";
 import { Content, ImgHome, HomeText } from "./styles";
 import { FiArrowRight } from "react-icons/fi";
+import ParticlesComponent from "../Particles";
 
 export function HomeHero() {
   return (
     <Container>
+      <ParticlesComponent id="particles" />
       <Content>
         <HomeText>
           <p>

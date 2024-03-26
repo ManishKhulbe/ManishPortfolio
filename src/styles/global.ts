@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 * {
@@ -16,8 +16,8 @@ html.normal-scroll {
 }
 
 body {
-  background: ${props => props.theme.background};
-  color: ${props => props.theme.textPrimary};
+  background: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.textPrimary};
   font-family: 'Poppins', sans-serif;
 }
 
@@ -32,13 +32,20 @@ a {
 
 ::-webkit-scrollbar{
   width: 0.5rem;
-  background-color: ${props => props.theme.backgroundSecond};
+  background-color: ${(props) => props.theme.backgroundSecond};
 }
 ::-webkit-scrollbar-thumb{
   border-radius: 0.5rem;
-  background-color: ${props => props.theme.secondColor};
+  background-color: ${(props) => props.theme.secondColor};
 }
 ::-webkit-scrollbar-thumb:hover{
-  background-color: ${props => props.theme.hoverSecond};
+  background-color: ${(props) => props.theme.hoverSecond};
 }
-`
+
+#particles canvas{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+`;

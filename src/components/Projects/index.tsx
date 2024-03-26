@@ -34,8 +34,11 @@ export function Projects() {
       <ProjectsContainer>
         {projects.slice(0, 9).map((project) => {
           return (
-            <Link href={`/project/${project.url}`} key={project.id}>
-              <a>
+            <Link
+              href={project.isLive ? project.url : `/project/${project.url}`}
+              key={project.id}
+            >
+              <a target={project.isLive ? "_blank" : "_self"}>
                 <ProjectsContent>
                   <Image
                     width={400}
