@@ -4,14 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import { ButtonPrimary, Container } from "../../styles/styles";
-import { Content, ImgHome, HomeText } from "./styles";
+import { Content, ImgHome, HomeText, DisplayNoneOnMobile } from "./styles";
 import { FiArrowRight } from "react-icons/fi";
 import ParticlesComponent from "../Particles";
 
 export function HomeHero() {
   return (
     <Container>
-      <ParticlesComponent id="particles" />
+      <DisplayNoneOnMobile>
+        <ParticlesComponent id="particles" />
+      </DisplayNoneOnMobile>
       <Content>
         <HomeText>
           <p>

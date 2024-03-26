@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Content = styled.div`
   display: flex;
@@ -15,11 +15,11 @@ export const Content = styled.div`
     margin-top: -1rem;
     padding-left: 2rem;
   }
-`
+`;
 
 export const HomeText = styled.div`
   p {
-    color: ${props => props.theme.gray_light};
+    color: ${(props) => props.theme.gray_light};
     @media (max-width: 350px) {
       font-size: 0.9rem;
     }
@@ -64,7 +64,7 @@ export const HomeText = styled.div`
   h1 {
     font-size: 2.2rem;
     font-weight: 800;
-    color: ${props => props.theme.firstColor};
+    color: ${(props) => props.theme.firstColor};
     background: linear-gradient(90deg, #9442fe, #3378ff);
     background-clip: text;
     -webkit-background-clip: text;
@@ -88,7 +88,7 @@ export const HomeText = styled.div`
       font-size: 2rem;
     }
 
-    color: ${props => props.theme.blue};
+    color: ${(props) => props.theme.blue};
     font-weight: 600;
   }
 
@@ -135,7 +135,7 @@ export const HomeText = styled.div`
       gap: 1.5rem;
     }
   }
-`
+`;
 
 export const ImgHome = styled.div`
   position: relative;
@@ -184,4 +184,11 @@ export const ImgHome = styled.div`
       }
     }
   }
-`
+`;
+
+export const DisplayNoneOnMobile = styled.div`
+  display: none;
+  @media (min-width: 994px) {
+    display: block;
+  }
+`;
