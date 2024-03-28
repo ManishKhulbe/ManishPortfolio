@@ -46,7 +46,7 @@ export default function Resume() {
 
         <PageSection>
           <iframe
-            src="/pdf/resume.png"
+            src="/pdf/manish-resume.png"
             allowFullScreen
             width="740"
             height="780"

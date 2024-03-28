@@ -33,7 +33,7 @@ export function CV() {
               src="/cv.png"
               alt="Home showing a download button of curriculum"
             />
-            <a href="/pdf/manish-one-page-resume.pdf" download>
+            <a href="/pdf/manish-3.pdf" download>
               <ButtonSecondAlt>
                 <b>Download CV</b> <FiDownload size={20} />
               </ButtonSecondAlt>
