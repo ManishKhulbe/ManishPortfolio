@@ -5,7 +5,7 @@ import { Footer } from "../components/Footer";
 import { ScrollTop } from "../components/ScrollTop";
 import { CV } from "../components/CV";
 import { Description, Section, Title } from "../styles/styles";
-import { PageSection } from "../styles/resume";
+import { PageSection, StyledIframe } from "../styles/resume";
 import { BsFileText } from "react-icons/bs";
 
 export default function Resume() {
@@ -45,9 +45,9 @@ export default function Resume() {
         <Description>Here you can see or download my resume.</Description>
 
         <PageSection>
-          <iframe
+          <StyledIframe
             src="/pdf/manish-resume.png"
-            allowFullScreen
+            // allowFullScreen
             width="740"
             height="780"
             title="Manish Khulbe"
